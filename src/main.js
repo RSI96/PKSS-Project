@@ -5,6 +5,7 @@ import store from './store'
 import VueResource from 'vue-resource'
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "@/plugins/echarts";
 
 Vue.config.productionTip = false
 Vue.use(VueResource);

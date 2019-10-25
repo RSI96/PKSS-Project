@@ -9,13 +9,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <router-link to="/buildingfirst" class="nav-link"><a>Building B1</a></router-link>
+                        <router-link to="/building1" class="nav-link"><a>Building B1</a></router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/nocomponent" class="nav-link"><a>Building B2</a></router-link>
+                        <router-link to="/building2" class="nav-link"><a>Building B2</a></router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/building3" class="nav-link"><a>Building B3</a></router-link>
                     </li>
                 </ul>
-                <strong class="navbar-text navbar-right">Time of a Day</strong>
+                <strong class="navbar-text navbar-right">{{ new Date().toLocaleString() }}</strong>
             </div>
         </nav>
         <ul>
