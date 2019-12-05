@@ -1,17 +1,14 @@
 <template>
-    <div>
+    <div class="col-sm-6 col-md-4 col-lg-4">
         <div class="panel">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    Last Measurement
+                    {{ reading.name }}
                 </h4>
             </div>
             <div class="panel body">
                 <h2>
-                    Odczyt jakiś 1
-                </h2>
-                <h2>
-                    jakiś 7
+                    {{ reading.value }}
                 </h2>
             </div>
         </div>
@@ -20,13 +17,16 @@
 
 <script>
     export default {
-        name: "Measurement"
+        name: "Measurement",
+        props: {
+            reading: Object
+        }
     }
 </script>
 
 <style scoped>
     .panel {
-        background-color: #dddddd;
+        background-color: #428bca;
         border-radius: 5px;
     }
 

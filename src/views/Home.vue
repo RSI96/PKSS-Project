@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h2>This site display data about AGH heating system</h2>
+    <h2>Ta strona pokazuje dane z systemu grzewczego AGH</h2>
     <hr>
-    <h6>It will show simulated data from a project</h6>
+    <h6>Są to symulowane dane z projektu</h6>
     <hr>
-    <h6>Enjoy!</h6>
+    <h6>Miłej zabawy!</h6>
   </div>
 </template>
 

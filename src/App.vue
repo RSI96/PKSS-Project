@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <app-header></app-header>
+    <app-header/>
     <div>
       <transition name="slide" mode="out-in">
-        <router-view></router-view>
+        <router-view/>
       </transition>
     </div>
   </div>
@@ -15,6 +15,10 @@
   export default {
     components: {
       appHeader: Header
+    },
+    created() {
+      this.$store.dispatch('initReadings')
+      this.$store.dispatch('initReadingsO')
     }
   }
 </script>

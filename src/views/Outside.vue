@@ -21,14 +21,14 @@
     import Measurement from "../components/Measurement";
 
     export default {
-        name: "Building3",
+        name: "Outside",
         components: {
             appChart: EChart,
             appMeasurement: Measurement
         },
         computed: {
             readings() {
-                return this.$store.getters.readings;
+                return this.$store.getters.outs_readings;
             }
         }
     }

@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Building1 from "./views/Building1";
 import Building2 from "./views/Building2";
 import Building3 from "./views/Building3";
+import Outside from "./views/Outside";
 
 Vue.use(Router)
 
@@ -15,6 +16,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/outside',
+      name: 'outside',
+      component: Outside
     },
     {
       path: '/building1',

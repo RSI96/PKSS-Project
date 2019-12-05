@@ -1,14 +1,17 @@
 <template>
     <div>
-    <div class="echarts">
-        <chart :options="chartOptionsBar"/>
-    </div>
+        <div class="echarts">
+            <chart :options="chartOptionsBar"/>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
         name: "EChart",
+        props: {
+            reading: Object
+        },
         data() {
             return {
                 chartOptionsBar: {
@@ -43,7 +46,7 @@
                         type: 'slider'
                     }],
                     xAxis: {
-                        data: ['0.00', '2.00', '4.00', '6.00', '8.00', '10.00', '12.00', '14.00', '16.00', '18.00', '20.00', '22.00', ]
+                        data: this.reading.timestamp
                     },
                     yAxis: {
                         type: 'value'
@@ -51,7 +54,7 @@
                     series: [
                         {
                             type: 'bar',
-                            data: [63, 75, 24, 92, 45, 67, 78, 99, 106, 130, 145, 20]
+                            data: this.reading.values
                         }
                     ],
                     color: '#428bca'
