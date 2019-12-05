@@ -26,7 +26,7 @@
                             class="btn btn-outline-primary my-2 my-sm-0"
                             type="button"
                             @click="downloadData"
-                    >Download data
+                    >Pobierz dane
                     </button>
                 </form>
             </div>

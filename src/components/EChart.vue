@@ -3,6 +3,23 @@
     <div class="echarts">
         <chart :options="chartOptionsBar"/>
     </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Data od" aria-label="Data od" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Data do" aria-label="Data do" aria-describedby="basic-addon1">
+            <select class="custom-select" id="inputGroupSelect02">
+                <option selected>Wybierz parametr</option>
+                <option value="1">U_b</option>
+                <option value="2">F_cob</option>
+                <option value="3">T_h</option>
+                <option value="3">T_h</option>
+                <option value="3">T_rref</option>
+                <option value="3">T_r</option>
+                <option value="3">T_pcob</option>
+            </select>
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="button">Akceptuj</button>
+            </div>
+        </div>
     </div>
 </template>
 

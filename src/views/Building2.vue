@@ -41,7 +41,7 @@
         created() {
             axios.get("http://10.129.11.171:8080/actual")
                 .then(res => (this.actual = res.data));
-            axios.get("http://10.129.11.171:8080/last10Minutes")
+            axios.get("http://10.129.11.171:8080/history")
                 .then(res => (this.history = res.data));
         }
     }

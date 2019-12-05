@@ -17,7 +17,7 @@
 </template>
 
 <script>
-    import EChart from "../components/EChart";
+    import EChart from "../components/EChart_out";
     import Measurement from "../components/Measurement";
 
     export default {

@@ -6,6 +6,16 @@
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Data od" aria-label="Data od" aria-describedby="basic-addon1">
             <input type="text" class="form-control" placeholder="Data do" aria-label="Data do" aria-describedby="basic-addon1">
+            <select class="custom-select" id="inputGroupSelect02">
+                <option selected>Wybierz parametr</option>
+                <option value="1">U_b</option>
+                <option value="2">F_cob</option>
+                <option value="3">T_h</option>
+                <option value="3">T_h</option>
+                <option value="3">T_rref</option>
+                <option value="3">T_r</option>
+                <option value="3">T_pcob</option>
+            </select>
             <div class="input-group-append">
                 <button class="btn btn-outline-primary" type="button">Akceptuj</button>
             </div>
@@ -16,14 +26,11 @@
 <script>
     export default {
         name: "EChart",
-        props: {
-            reading: Object
-        },
         data() {
             return {
                 chartOptionsBar: {
                     title: {
-                        text: "Temperatura w budynku w ciągu dnia",
+                        text: "Temperatura na zewnątrz",
                         x: 'center',
                         textStyle: {
                             fontSize: 18
@@ -53,7 +60,7 @@
                         type: 'slider'
                     }],
                     xAxis: {
-                        data: this.reading.timestamp
+                        data: ['0.00', '4.00', '5.00', '6.00', '7.00', '11.00', '12.00', '14.00', '18.00', '21.00', '22.00', '24.00', ]
                     },
                     yAxis: {
                         type: 'value'
@@ -61,7 +68,7 @@
                     series: [
                         {
                             type: 'bar',
-                            data: this.reading.values
+                            data: [45, 123, 56, 23, 32, 34, 78, 145, 106, 67, 160, 18]
                         }
                     ],
                     color: '#428bca'
